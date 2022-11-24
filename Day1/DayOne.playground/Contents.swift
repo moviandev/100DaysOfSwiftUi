@@ -49,3 +49,24 @@ counter /= 2
 let number = 120
 print(number.isMultiple(of: 3))
 print(120.isMultiple(of: 3))
+
+let floating = 0.1 + 0.2
+print(floating)
+
+let a = 1
+let b = 2.0
+let c = Double(a) + b
+
+let double1 = 3.1
+let double2 = 3137.2342
+let double3 = 3.0
+let int1 = 3
+
+var n = "Teste"
+//n = 2 cannot do that
+
+var rating = 5.0
+rating *= 2
+
+
+
