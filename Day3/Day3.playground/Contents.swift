@@ -38,3 +38,34 @@ print(cities.sorted())
 let presient = ["Dilma", "Temer", "Lula"]
 let reversedPresidents = presient.reversed()
 print(reversedPresidents)
+
+let employee = [
+    "name": "Taylor Swift",
+    "job": "Singer",
+    "location": "Nashvilee"
+]
+
+print(employee["name", default: "Unknown"])
+
+let hasGraduated = [
+    "Eric": false,
+    "Maeve": true,
+    "Otis": false
+]
+
+let olympics = [
+    2012: "London",
+    2016: "Rio de Janeiro",
+    2021: "Tokyo"
+]
+
+print(olympics[2012, default: "Unknown"])
+
+var heights = [String: Int]()
+heights["Yao Ming"] = 229
+
+
+var archEnemies = [String: String]()
+archEnemies["Batman"] = "The joker"
+archEnemies["Superman"] = "Lex Luthor"
+archEnemies["Batman"] = "Penguin"
