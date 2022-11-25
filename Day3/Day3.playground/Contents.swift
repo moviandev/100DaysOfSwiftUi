@@ -85,7 +85,13 @@ actors2.insert("Samuel L Jackson")
 actors2.insert("Nicolas Cage")
 print(actors2)
 
+enum Weekday {
+    case monday, tuesday, wednesday, thursday, friday
+}
 
+var day = Weekday.monday
+day = .tuesday
+day = .wednesday
 
 
 
