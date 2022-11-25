@@ -69,3 +69,24 @@ var archEnemies = [String: String]()
 archEnemies["Batman"] = "The joker"
 archEnemies["Superman"] = "Lex Luthor"
 archEnemies["Batman"] = "Penguin"
+
+
+var actors = Set([
+    "Denzel Washongton",
+    "Tom Cruise",
+    "Nicolas Cage",
+    "Samuel L Jackson"
+])
+
+print(actors)
+
+var actors2 = Set<String>()
+actors2.insert("Samuel L Jackson")
+actors2.insert("Nicolas Cage")
+print(actors2)
+
+
+
+
+
+
