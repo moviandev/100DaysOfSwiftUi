@@ -24,3 +24,32 @@ func printTimesTables(number: Int, end: Int) {
 }
 
 printTimesTables(number: 8, end: 20)
+
+let root = sqrt(169)
+print(root)
+
+func rollDice() -> Int {
+    Int.random(in: 1...6)
+}
+
+let result = rollDice()
+print(result)
+
+func hasSameLetters(str1: String, str2: String) -> Bool {
+    str1.sorted() == str2.sorted();
+}
+
+let test = hasSameLetters(str1: "Matheus", str2: "Movian");
+print(test)
+
+func pythagoras(a: Double, b: Double) -> Double {
+    sqrt(a * a + b * b)
+}
+
+let c = pythagoras(a: 3, b: 4)
+print(c)
+
+func sayHello() {
+    print("Hello!")
+    return
+}
