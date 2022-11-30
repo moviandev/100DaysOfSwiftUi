@@ -53,3 +53,18 @@ func sayHello() {
     print("Hello!")
     return
 }
+
+func isUppercase(string: String) -> Bool {
+    string == string.uppercased()
+}
+
+func getUser() -> (firstName: String, lastName: String) {
+    ("Taylor", "Swift")
+}
+
+let (firstName, lastName) = getUser()
+print("First name: \(firstName) surname: \(lastName)")
+
+
+
+
