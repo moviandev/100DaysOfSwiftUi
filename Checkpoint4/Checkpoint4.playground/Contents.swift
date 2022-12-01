@@ -9,28 +9,12 @@ func findSquareRoot(_ number: Int) throws -> Int {
         throw SquareRootErrors.OutOfBound
     }
     
-    var root = 0
-    
-    for i in 0...100 {
+    for i in 1...100 {
         if i * i == number {
-            root = i
-            break
+            return i
         }
     }
-    
-//    while (root <= 100) {
-//        if root * root == number {
-//            break
-//        }
-//
-//        root += 1;
-//    }
-    
-    if root == 0 {
-        throw SquareRootErrors.NoRoot
-    }
-    
-    return root
+    throw SquareRootErrors.NoRoot
 }
 
 do {
