@@ -60,3 +60,36 @@ print(tOnly)
 let upperCaseTeam = team.map { $0.uppercased() }
 print(upperCaseTeam)
 
+func makeArray(size: Int, using generator: () -> Int) -> [Int] {
+    var numbers = [Int]()
+    
+    for _ in 0..<size {
+        let newNumber = generator()
+        numbers.append(newNumber)
+    }
+    
+    return numbers
+}
+
+let rolls = makeArray(size: 50) {
+    Int.random(in: 1...20)
+}
+
+print(rolls)
+
+func doImportantWork(first: () -> Void, second: () -> Void, third: () -> Void) {
+    print("About to start first important work")
+    first()
+    print("About to start second important work")
+    second()
+    print("About to start third important work")
+    third()
+}
+
+doImportantWork {
+    print("This  is the first work")
+} second: {
+    print("This  is the second work")
+} third: {
+    print("This  is the thrid work")
+}
