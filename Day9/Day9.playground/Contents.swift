@@ -20,7 +20,7 @@ let sayHello1 = { (name: String) -> String in
 
 print(sayHello1("Taylor"))
 
-let team = ["Gloria", "Manny", "Joey"]
+let team = ["Gloria", "Manny", "Joey", "Tess"]
 let sortedTeam = team.sorted()
 print(sortedTeam)
 
@@ -39,18 +39,24 @@ func captainFirstSorted(name1: String, name2: String) -> Bool {
 //print(captainFirstTeam)
 
 
-let captainFirstTeam = team.sorted(by: { (name1: String, name2: String) -> Bool in
-    if name1 == "Manny" {
+let captainFirstTeam = team.sorted {
+    if $0 == "Manny" {
         return true
-    } else if name2 == "Manny" {
+    } else if $1 == "Manny" {
         return false
     }
     
-    return name1 < name2
-})
+    return $0 < $1
+}
 
 print(captainFirstTeam)
 
+let reverseTeam = team.sorted { $0 > $1 }
+print(reverseTeam)
 
+let tOnly = team.filter { $0.hasPrefix("T") }
+print(tOnly)
 
+let upperCaseTeam = team.map { $0.uppercased() }
+print(upperCaseTeam)
 
