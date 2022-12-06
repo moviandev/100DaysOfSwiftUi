@@ -90,3 +90,19 @@ var app = App()
 app.contacts.append("Adrian")
 app.contacts.append("Test")
 app.contacts.append("West")
+
+
+struct Player {
+    let name: String
+    let number: Int
+    
+    init(name: String) {
+        self.name = name
+        self.number = Int.random(in: 1...99)
+    }
+}
+
+let player = Player(name: "Megn R")
+print(player.number)
+
+
