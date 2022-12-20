@@ -48,3 +48,16 @@ comute(distance: 100, using: car)
 
 let bike = Bicycle()
 comute(distance: 80, using: bike)
+
+func getRandomNumber() -> some Equatable {
+    Int.random(in: 1...6)
+}
+
+func getRandomBool() -> some Equatable {
+    Bool.random()
+}
+
+print(getRandomNumber() == getRandomNumber())
+
+let num = getRandomNumber()
+
