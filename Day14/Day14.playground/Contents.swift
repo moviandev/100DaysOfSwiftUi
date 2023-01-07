@@ -79,3 +79,11 @@ print(author)
 let input = ""
 let number1 = Int(input) ?? 0
 print(number1)
+
+let names = ["Arya", "Bran", "Robb", "Sansa"]
+let chosen = names.randomElement()?.uppercased() ?? "No one"
+
+var book1: Book? = nil
+var author1 = book1?.author?.first?.uppercased() ?? "A"
+
+
