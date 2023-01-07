@@ -86,4 +86,19 @@ let chosen = names.randomElement()?.uppercased() ?? "No one"
 var book1: Book? = nil
 var author1 = book1?.author?.first?.uppercased() ?? "A"
 
+enum UserError: Error {
+    case badId, networkFailed
+}
+
+func getUser(id: Int) throws -> String {
+    throw UserError.networkFailed
+}
+
+if let user = try? getUser(id: 23) {
+    print("User: \(user)")
+}
+
+let user = (try? getUser(id: 23)) ?? "Anonymous"
+print(user)
+
 
